@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  background-color: none;
+}
+
+div {
+  text-align: center;
+  margin: auto;
+}
+
+#two{
+  border-bottom: solid 1px black;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+table {
+  margin: auto;
+}
+
+#three{
+  display: table;
+  text-align: center;
+}
+
+/*모바일 디바이스 320px 보다 작은 화면에 적용)  */
+@media (max-width: 319px) {
+  h1 {
+    color: black;
+  }
+  #two{
+    border-bottom: none;
+  }
+  body {
+    background-color: aqua;
+  }
+}
+ 
+/*태블릿 디바이스 (가로 해상도가 320px보다 크고 767px 보다 작은 화면에 적용)  */
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    color: black;
+  }
+  #two {
+    border-bottom: none;
+  }
+  body {
+    background-color: lightskyblue;
+  }
+}
+
+/* 데스크탑 (가로 해상도가 768px보다 크고 1919px 보다 작은 화면에 적용)  */
+@media (min-width: 768px) and (max-width: 1919px) {
+  h1 {
+    color: black;
+  }
+  #two{
+    border-bottom: none;
+  }
+  body {
+    background-color: antiquewhite;
+  }
+} 
+ 
+/* 큰화면 데스크탑 (가로 해상도가 1919px 보다 큰 화면에 적용)  */
+@media (min-width: 1919px) {
+  body {
+    background: white;
+  }
+}
